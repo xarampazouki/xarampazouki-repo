@@ -1,10 +1,6 @@
-//import java.io.BufferedReader;
-//import java.io.FileReader;
-//import java.io.IOException;
 import java.lang.*;
 import java.io.*;
 import java.util.*;
-//import java.util.Date;
 import java.text.*;
 
 class StockSpan
@@ -18,12 +14,9 @@ class StockSpan
 
 			Float[] pricesArr = prices.toArray(new Float[prices.size()]);
 			String[] datesArr = dates.toArray(new String[dates.size()]);
-			//List<URL> list = new ArrayList<URL>();
-			//URL[] array = list.toArray(new URL[0]);
 			BufferedReader br = null;
 			try
 			{
-				//String s = null;
 				String s=br.readLine();
 				br=new BufferedReader(new FileReader(args[1])); //""
 				while ((s!= null))
@@ -34,8 +27,6 @@ class StockSpan
 				  dates.add(fields[0]);
 				  Float f = Float.parseFloat(fields[1]);
 				  prices.add(f);
-				  //Float[] pricesArr = prices.toArray(new Float[prices.size()]);
-				  //String[] datesArr = dates.toArray(new String[dates.size()]);
 				}
 			}
 			catch (IOException e)
